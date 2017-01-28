@@ -15,6 +15,7 @@
 		D2D7BB4B1E3D4E30003417FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D7BB491E3D4E30003417FC /* LaunchScreen.storyboard */; };
 		D2D7BB561E3D4E30003417FC /* Pick_a_StoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D7BB551E3D4E30003417FC /* Pick_a_StoryboardTests.m */; };
 		D2D7BB611E3D4E30003417FC /* Pick_a_StoryboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D7BB601E3D4E30003417FC /* Pick_a_StoryboardUITests.m */; };
+		D2D7BB701E3D5057003417FC /* Imperial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D7BB6E1E3D5057003417FC /* Imperial.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D2D7BB5C1E3D4E30003417FC /* Pick a StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pick a StoryboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D7BB601E3D4E30003417FC /* Pick_a_StoryboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pick_a_StoryboardUITests.m; sourceTree = "<group>"; };
 		D2D7BB621E3D4E30003417FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D7BB6F1E3D5057003417FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Imperial.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D2D7BB411E3D4E30003417FC /* ViewController.h */,
 				D2D7BB421E3D4E30003417FC /* ViewController.m */,
 				D2D7BB441E3D4E30003417FC /* Main.storyboard */,
+				D2D7BB6E1E3D5057003417FC /* Imperial.storyboard */,
 				D2D7BB471E3D4E30003417FC /* Assets.xcassets */,
 				D2D7BB491E3D4E30003417FC /* LaunchScreen.storyboard */,
 				D2D7BB4C1E3D4E30003417FC /* Info.plist */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2D7BB4B1E3D4E30003417FC /* LaunchScreen.storyboard in Resources */,
+				D2D7BB701E3D5057003417FC /* Imperial.storyboard in Resources */,
 				D2D7BB481E3D4E30003417FC /* Assets.xcassets in Resources */,
 				D2D7BB461E3D4E30003417FC /* Main.storyboard in Resources */,
 			);
@@ -322,6 +326,14 @@
 				D2D7BB4A1E3D4E30003417FC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2D7BB6E1E3D5057003417FC /* Imperial.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2D7BB6F1E3D5057003417FC /* Base */,
+			);
+			name = Imperial.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -15,9 +15,41 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // simulate setting user preference
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:NO forKey:@"unitSwitchImperial"];
+    [defaults synchronize];
+    
+    // pick the right storyboard
+    UIStoryboard *storyboard = nil;
+    NSUserDefaults *defaultimperial = [NSUserDefaults standardUserDefaults];
+    
+    if ([defaultimperial boolForKey:@"unitSwitchImperial"]) {
+        // load imperial storyboard
+        storyboard = [self grabStoryboardImperial];
+        
+    } else {
+        // load metric storyboard
+        storyboard = [self grabStoryboardMetric];
+    }
+    
+    // show the storyboard
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (UIStoryboard*)grabStoryboardMetric {
+    
+    return [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+}
+
+- (UIStoryboard*)grabStoryboardImperial {
+    
+    return [UIStoryboard storyboardWithName:@"Imperial" bundle:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
